@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+	Productivity Web Page
+	Belinda Huang
+-->
+
+<html>
+	<head>
+		<title>Productivity Lives Here!</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content+"width+device-width, initial-scale=1">
+		<link rel="stylesheet" href="productivity.css"/>
+	</head>
+	<body>
+		<h1>To Do</h1>
+		<h2><a href="inspoBoard.html" target="_self">Book-spiration Board</a></h2>
+		<div class="taskMenu">
+			<p>Add a new task!</p>
+			<p>Task Name:</p><input type="text" name="task" id="theTask">
+			<p>Category:</p>
+			<select id="category">
+				<option value="School">School</option>
+				<option value="Work">Work</option>
+				<option value="Friends">Friends</option>
+				<option value="Family">Family</option>
+			</select>
+
+			<p>Deadline:</p><input type="datetime-local" name="deadline" id="theDeadline">
+			<button type="button" onclick="newTask()">Enter</button>
+			<p>Add New Category:</p>
+			<input type="text" name="altCategory" id="altCategory"><input type="color" name="cColor" id="cColor" value="#ffffff"><button type="button" onclick="addCategory()">Add</button>
+		</div>
+
+		<table id="myTable">
+
+<!--header-->
+			<tr>
+				<th class="headings" onclick="sortAlpha(0)">Task</th>
+				<th class="headings" onclick="sortAlpha(1)">Category</th>
+				<th class="headings" onclick="sortNum(2)">Date Added</th>
+				<th class="headings" onclick="sortNum(3)">Deadline</th>
+				<th class="headings" onclick="sortAlpha(4)">Completed</th>
+				<th class="headings">Delete</th>
+			</tr>
+
+
+		</table>
+	</body>
+
+<script type="text/javascript" src="toDo.js"></script>
+</html>

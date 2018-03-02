@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!--
+	Productivity Web Page
+	Belinda Huang
+-->
+
+<html>
+	<head>
+		<title>Get Inspired</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content+"width+device-width, initial-scale=1">
+		<link rel="stylesheet" href="productivity.css"/>
+	</head>
+	<body>
+	<h1>Book-spiration Board</h1>
+	<h2><a href="toDo.html" target="_self">To Do List</a></h2>
+		<div id = "board">
+		<div class="row">
+		<img src ="cruelPrince.jpg" alt="Cruel Prince" onclick="openModal();currentSlide(1)" class="hoverShadow">
+		<img src ="toAlltheBoys.jpg" alt="To All the Boys I've Loved Before" onclick="openModal();currentSlide(2)" class="hoverShadow">
+		<img src ="winnersCurse.jpg" alt="winner's curse" onclick="openModal();currentSlide(3)" class="hoverShadow">
+		<img src ="AlexRider.jpeg" alt="AlexRider" onclick="openModal();currentSlide(4)" class="hoverShadow">
+		<img src ="akata.jpg" alt="Akata Witch" onclick="openModal();currentSlide(5)" class="hoverShadow">
+		</div>
+
+		<div class="row">
+		<img src ="reading.jpg" alt="Reading" onclick="openModal();currentSlide(6)" class="hoverShadow">
+		<img src ="Passenger.jpg" alt="passenger" onclick="openModal();currentSlide(7)" class="hoverShadow">
+		<img src ="sixOfCrows.jpg" alt="six of crows" onclick="openModal();currentSlide(8)" class="hoverShadow">
+		<img src ="shadowAndBone.jpg" alt="grisha trilogy" onclick="openModal();currentSlide(9)" class="hoverShadow">
+		<img src ="HP1.jpg" alt="Harry Potter 1" onclick="openModal();currentSlide(10)" class="hoverShadow">
+		</div>
+
+		<div class="row">
+		<img src ="bubbleTea.jpg" alt="Bubble Tea and Want" onclick="openModal();currentSlide(11)" class="hoverShadow">
+		<img src ="challengerDeep.jpg" alt="ChallengerDeep" onclick="openModal();currentSlide(12)" class="hoverShadow">
+		<img src ="tog.jpg" alt="Throne of Glass" onclick="openModal();currentSlide(13)" class="hoverShadow">
+		<img src ="illuminae.jpg" alt="Illuminae" onclick="openModal();currentSlide(14)" class="hoverShadow">
+		<img src ="allAmericanBoys.jpg" alt="AAB" onclick="openModal();currentSlide(15)" class="hoverShadow">
+		</div>
+
+		<div class="row">
+		<img src ="dreamT.jpg" alt="Dream Thieves" onclick="openModal();currentSlide(16)" class="hoverShadow">
+		<img src ="winter.jpg" alt="winter" onclick="openModal();currentSlide(17)" class="hoverShadow">
+		<img src ="theSun.jpg" alt="the Sun is Always a Star" onclick="openModal();currentSlide(18)" class="hoverShadow">
+		<img src ="wintersong.jpg" alt="Wintersong" onclick="openModal();currentSlide(19)" class="hoverShadow">
+		<img src ="flame.jpg" alt="flame in the mist" onclick="openModal();currentSlide(120)" class="hoverShadow">
+		</div>
+		</div>
+
+
+<!--Lightbox-->
+<div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modalStuff">
+
+	<!-- Slides -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 20</div>
+      <img src="cruelPrince.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 20</div>
+      <img src="toAlltheBoys.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 20</div>
+      <img src="winnersCurse.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 20</div>
+      <img src="AlexRider.jpeg" style="width:100%">
+    </div>
+
+
+	<div class="mySlides">
+      <div class="numbertext">5 / 20</div>
+      <img src="akata.jpg" style="width:100%">
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">6 / 20</div>
+      <img src="reading.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 20</div>
+      <img src="Passenger.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 20</div>
+      <img src="sixOfCrows.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 20</div>
+      <img src="shadowAndBone.jpg" style="width:100%">
+    </div>
+
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 20</div>
+      <img src="HP1.jpg" style="width:100%">
+    </div>
+
+	<div class="mySlides">
+      <div class="numbertext">11 / 20</div>
+      <img src="bubbleTea.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">12 / 20</div>
+      <img src="challengerDeep.jpg" style="width:100%">
+    </div>
+
+ 	<div class="mySlides">
+      <div class="numbertext">13 / 20</div>
+      <img src="tog.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">14 / 20</div>
+      <img src="illuminae.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">15 / 20</div>
+      <img src="allAmericanBoys.jpg" style="width:100%">
+    </div>
+
+
+    <div class="mySlides">
+      <div class="numbertext">16 / 20</div>
+      <img src="dreamT.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">17 / 20</div>
+      <img src="winter.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">18 / 20</div>
+      <img src="theSun.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">19 / 20</div>
+      <img src="wintersong.jpg" style="width:100%">
+    </div>
+
+     <div class="mySlides">
+      <div class="numbertext">20 / 20</div>
+      <img src="flame.jpg" style="width:100%">
+    </div>
+
+<!-- Next/Previous -->
+
+<a class="prev" onclick="changeSlides(-1)">&#10094;</a>
+<a class="next" onclick="changeSlides(1)">&#10095;</a>
+
+<!-- Play Slideshow -->
+
+<a class="play" id="play">&#9655;</a>
+
+<!-- Thumbnails -->
+	<img class="demo" src ="cruelPrince.jpg" alt="Cruel Prince" onclick="currentSlide(1)">
+	<img class="demo" src ="toAlltheBoys.jpg" alt="To All the Boys I've Loved Before" onclick="currentSlide(2)">
+	<img class="demo" src ="winnersCurse.jpg" alt="winner's curse" onclick="currentSlide(3)">
+	<img class="demo" src ="AlexRider.jpeg" alt="AlexRider" onclick="currentSlide(4)">
+	<img class="demo" src ="akata.jpg" alt="Akata Witch" onclick="currentSlide(5)">
+
+	<img class="demo" src ="reading.jpg" alt="Reading" onclick="currentSlide(6)">
+	<img class="demo" src ="Passenger.jpg" alt="passenger" onclick="currentSlide(7)">
+	<img class="demo" src ="sixOfCrows.jpg" alt="six of crows" onclick="currentSlide(8)">
+	<img class="demo" src ="shadowAndBone.jpg" alt="grisha trilogy" onclick="currentSlide(9)">
+	<img class="demo" src ="HP1.jpg" alt="Harry Potter 1" onclick="currentSlide(10)">
+
+	<img class="demo" src ="bubbleTea.jpg" alt="Bubble Tea and Want" onclick="currentSlide(11)">
+	<img class="demo" src ="challengerDeep.jpg" alt="ChallengerDeep" onclick="currentSlide(12)">
+	<img class="demo" src ="tog.jpg" alt="Throne of Glass" onclick="currentSlide(13)">
+	<img class="demo" src ="illuminae.jpg" alt="Illuminae" onclick="currentSlide(14)">
+	<img class="demo" src ="allAmericanBoys.jpg" alt="AAB" onclick="currentSlide(15)" >
+
+	<img class="demo" src ="dreamT.jpg" alt="Dream Thieves" onclick="currentSlide(16)">
+	<img class="demo" src ="winter.jpg" alt="winter" onclick="currentSlide(17)">
+	<img class="demo" src ="theSun.jpg" alt="the Sun is Always a Star" onclick="currentSlide(18)">
+	<img class="demo" src ="wintersong.jpg" alt="Wintersong" onclick="currentSlide(19)">
+	<img class="demo" src ="flame.jpg" alt="flame in the mist" onclick="currentSlide(120)">
+
+</div> <!-- Modal stuff-->
+</div> <!-- Modal -->
+
+
+	</body>
+
+<script type="text/javascript" src="inspoBoard.js"></script>
+</html>
